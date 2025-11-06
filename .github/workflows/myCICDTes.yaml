@@ -1,0 +1,10 @@
+name: Simple startup
+on: 
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out my code
+        uses: actions/checkout@v2
